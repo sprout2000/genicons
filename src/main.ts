@@ -51,7 +51,7 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     x: store.get('x'),
     y: store.get('y'),
-    width: 360,
+    width: isDarwin ? 360 : 400,
     height: isDarwin ? 320 : 400,
     show: false,
     titleBarStyle: isDarwin ? 'hidden' : 'default',

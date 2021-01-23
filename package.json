@@ -30,8 +30,8 @@
   ],
   "main": "dist/main.js",
   "scripts": {
-    "start": "run-p devtools serve",
-    "preserve": "run-s clean build",
+    "dev": "run-p devtools start",
+    "start": "run-s clean build serve",
     "serve": "electron .",
     "devtools": "react-devtools",
     "clean": "rimraf dist release",
@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "electron-log": "^4.3.1",
-    "electron-store": "^6.0.1",
+    "electron-store": "^7.0.0",
     "electron-updater": "^4.3.5",
     "i18next": "^19.8.4",
     "mime-types": "^2.1.28",
@@ -61,7 +61,7 @@
     "@types/css-minimizer-webpack-plugin": "^1.1.1",
     "@types/mime-types": "^2.1.0",
     "@types/mini-css-extract-plugin": "^1.2.2",
-    "@types/node": "^14.14.21",
+    "@types/node": "^14.14.22",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/terser-webpack-plugin": "^5.0.2",
@@ -77,14 +77,14 @@
     "mini-css-extract-plugin": "^1.3.4",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
-    "sass": "^1.32.4",
+    "sass": "^1.32.5",
     "sass-loader": "^10.1.1",
     "terser-webpack-plugin": "^5.1.1",
     "ts-loader": "^8.0.14",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3",
-    "webpack": "^5.15.0",
-    "webpack-cli": "^4.3.1"
+    "webpack": "^5.17.0",
+    "webpack-cli": "^4.4.0"
   },
   "optionalDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.14.0",
@@ -93,7 +93,6 @@
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.2.1",
-    "react-devtools": "^4.10.1"
+    "prettier": "^2.2.1"
   }
 }
